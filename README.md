@@ -27,6 +27,10 @@ pip install -r requirements.txt
 
 ### Web scrapping
 
+```bash
+python python feed_app/main.py
+```
+
 ### REST API
 
 ```bash
@@ -34,3 +38,9 @@ uvicorn sql_app.main:app --reload
 ```
 
 #### Routes
+
+List all songs: `GET /songs`
+
+```
+curl http://localhost:8000/songs
+```
