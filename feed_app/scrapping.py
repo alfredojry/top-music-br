@@ -35,7 +35,7 @@ def exec_scrapping() -> dict:
                 br_lines = song_soup.select('.trad.pair')
                 br_lyric = '\n'.join(line.string for line in br_lines)
                 original_lines = song_soup.select('.orig.pair')
-                original_lyric = ''.join(line.string for line in original_lines)
+                original_lyric = '\n'.join(line.string for line in original_lines)
         # Get band name
         band = song_soup.find('a', { 'data-target': 'artBody' }).string
         # Get genres
