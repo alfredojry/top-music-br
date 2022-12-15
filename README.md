@@ -8,6 +8,12 @@ Web Scrapping and API for query into 100 songs most listened in Brazil, made wit
 * PIP
 * Linux (optional)
 
+## Tech stack
+
+* Web Scrapping: Python + request + BeautifulSoap
+* REST API: Python + FastAPI
+* Database: SQLite + SQLAlchemy
+
 ## Instalation
 
 Init virtual enviroment.

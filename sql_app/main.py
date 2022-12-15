@@ -14,8 +14,3 @@ app = FastAPI()
 def find_all(db: Session = Depends(get_db)):
     songs = SongRepository.find_all(db)
     return [SongResponse.from_orm(song) for song in songs]
-
-@app.post('/songs', response_model=SongResponse)
-def save(request: SongRequest, db: Session = Depends(get_db)):
-    song = SongRepository.save(db, Song(**request.dict()))
-    return SongResponse.from_orm(song)
