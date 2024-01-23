@@ -18,6 +18,7 @@ Web Scrapping and API for query into 100 songs most listened in Brazil, made wit
 
 ```bash
 sudo docker pull alfredojry/top-music-br:v1
+sudo docker run -p 8000:8000 alfredojry/top-music-br:v1
 ```
 
 ## Instalation on Linux
