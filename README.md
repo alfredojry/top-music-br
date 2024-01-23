@@ -14,7 +14,13 @@ Web Scrapping and API for query into 100 songs most listened in Brazil, made wit
 * REST API: Python + FastAPI
 * Database: SQLite + SQLAlchemy
 
-## Instalation
+## Instalation from docker image
+
+```bash
+sudo docker pull alfredojry/top-music-br:v1
+```
+
+## Instalation on Linux
 
 Init virtual enviroment.
 
